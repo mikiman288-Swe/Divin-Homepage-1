@@ -14,7 +14,7 @@
   --container: 1180px;
   --hero-height: 650px;
   --transition: 260ms cubic-bezier(.2,.6,.2,1);
-  --hero-image: url('assets/hero.jpg');
+  --hero-image: url('images/1.png');
   --circle-services-image: url('assets/circle-services.jpg');
   --circle-results-image: url('assets/circle-results.jpg');
   --font-heading: "Inter", system-ui, sans-serif;
