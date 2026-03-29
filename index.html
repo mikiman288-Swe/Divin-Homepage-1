@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produits Divin</title>
+  <meta name="description" content="Luxury editorial one-page layout inspired by the provided reference." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- QUICK GUIDE
+       - Change logo: assets/logo.svg
+       - Change hero image: styles.css => --hero-image
+       - Change service/result circle images: styles.css => variables
+       - Change video: data-video-type and data-video-url in .video-section
+       - Change social links in footer
+  -->
+
+  <header class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="topbar container">
+      <a href="#" class="brand" aria-label="Produits Divin home">
+        <img src="assets/logo.svg" alt="Produits Divin logo" class="brand__logo" />
+      </a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#produits">PRODUCTS</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#services">SERVICES</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+
+    <div class="hero__bottom container">
+      <p class="hero__claim reveal">More quality, more luxury in less time</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--light intro" id="produits">
+      <div class="container">
+        <h2 class="section__title reveal">PRODUITS DIVIN</h2>
+        <p class="section__lead reveal">
+          A refined universe where heritage, taste, and luxury converge in an editorial presentation of
+          premium products and timeless experiences.
+        </p>
+
+        <div class="intro__cols">
+          <article class="intro__text reveal">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat, velit nec posuere tempor,
+              purus elit tristique dolor, nec finibus arcu risus sed magna. Duis ornare mi at magna volutpat,
+              quis iaculis nunc ultricies. Curabitur facilisis, lectus sed pulvinar vulputate, tellus nisl
+              volutpat velit, at aliquet arcu sem at est.
+            </p>
+          </article>
+
+          <article class="intro__text reveal" data-delay="100">
+            <p>
+              Morbi non nisi quis nunc eleifend volutpat. Integer posuere sapien vel metus gravida, sed posuere
+              eros imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+              curae; aenean laoreet id erat in mattis.
+            </p>
+          </article>
+        </div>
+
+        <div class="section__cta reveal" data-delay="180">
+          <a href="#services" class="btn btn--dark">READ MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark team" id="about">
+      <div class="container">
+        <h2 class="section__title section__title--light reveal">TEAMWORK</h2>
+        <p class="team__lead reveal">
+          We are proud of our products and excited to receive thoughtful feedback from our audience.
+        </p>
+
+        <div class="team__carousel">
+          <button class="carousel-arrow carousel-arrow--left" type="button" aria-label="Previous team slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="team__cards">
+            <article class="team-card reveal">
+              <div class="team-card__avatar"></div>
+              <p class="team-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <h3 class="team-card__name">ABEL DIVIN</h3>
+              <p class="team-card__role">Design Director</p>
+            </article>
+
+            <article class="team-card reveal" data-delay="100">
+              <div class="team-card__avatar"></div>
+              <p class="team-card__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              <h3 class="team-card__name">ALEX DIVIN</h3>
+              <p class="team-card__role">Brand Strategist</p>
+            </article>
+
+            <article class="team-card reveal" data-delay="180">
+              <div class="team-card__avatar"></div>
+              <p class="team-card__text">Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+              <h3 class="team-card__name">MONICA DIVIN</h3>
+              <p class="team-card__role">Creative Lead</p>
+            </article>
+          </div>
+
+          <button class="carousel-arrow carousel-arrow--right" type="button" aria-label="Next team slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark testimonials">
+      <div class="container testimonials__wrap">
+        <p class="testimonials__eyebrow reveal">COMMENTS AND OPINIONS</p>
+
+        <div class="testimonials__grid">
+          <button class="carousel-arrow carousel-arrow--left carousel-arrow--ghost" type="button" aria-label="Previous testimonial">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <article class="testimonial reveal">
+            <blockquote>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </blockquote>
+            <p class="testimonial__author">JUAN GARCÍA</p>
+            <p class="testimonial__meta">Wine importer & luxury food enthusiast</p>
+          </article>
+
+          <article class="testimonial reveal" data-delay="100">
+            <blockquote>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            </blockquote>
+            <p class="testimonial__author">MARIA LÓPEZ</p>
+            <p class="testimonial__meta">Brand curator and collector</p>
+          </article>
+
+          <button class="carousel-arrow carousel-arrow--right carousel-arrow--ghost" type="button" aria-label="Next testimonial">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light services" id="services">
+      <div class="container split split--circle-left">
+        <div class="split__media reveal">
+          <div class="circle-media circle-media--services"></div>
+        </div>
+
+        <div class="split__content reveal" data-delay="120">
+          <h2 class="split__title">Some of our services</h2>
+          <p class="split__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#video" class="btn btn--dark">READ MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light results">
+      <div class="container split split--circle-right">
+        <div class="split__content reveal">
+          <h2 class="split__title split__title--stacked">Some of our<br />results</h2>
+          <p class="split__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          </p>
+          <a href="#newsletter" class="btn btn--dark">READ MORE</a>
+        </div>
+
+        <div class="split__media reveal" data-delay="120">
+          <div class="circle-media circle-media--results"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--video video-section" id="video" data-video-type="youtube" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1">
+      <div class="container video-section__inner">
+        <h2 class="video-section__title reveal">More information<br />about our culture...</h2>
+        <button class="video-play reveal" data-delay="120" type="button" aria-label="Play video">
+          <span class="video-play__triangle"></span>
+        </button>
+        <p class="video-section__caption reveal" data-delay="180">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--light details">
+      <div class="container">
+        <div class="details__icon reveal">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <h2 class="section__title details__title reveal">Quality is in the small details</h2>
+        <p class="details__lead reveal">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+        </p>
+
+        <div class="details__grid">
+          <article class="detail-item reveal">
+            <div class="detail-item__icon"><i class="fa-regular fa-face-smile"></i></div>
+            <h3>EXPERIENCE</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </article>
+          <article class="detail-item reveal" data-delay="80">
+            <div class="detail-item__icon"><i class="fa-regular fa-heart"></i></div>
+            <h3>UNIQUE PRODUCTS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </article>
+          <article class="detail-item reveal" data-delay="120">
+            <div class="detail-item__icon"><i class="fa-solid fa-dollar-sign"></i></div>
+            <h3>SPECIAL PRICES</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </article>
+          <article class="detail-item reveal" data-delay="180">
+            <div class="detail-item__icon"><i class="fa-regular fa-user"></i></div>
+            <h3>PERSONALIZATION</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section newsletter" id="newsletter">
+      <div class="container newsletter__inner">
+        <h2 class="section__title section__title--light reveal">SUBSCRIBE TO US TO LEARN MORE</h2>
+        <p class="newsletter__lead reveal">Join the family, become a divine being</p>
+
+        <form class="newsletter__form reveal" data-delay="120">
+          <label class="sr-only" for="newsletter-email">Your email address</label>
+          <input id="newsletter-email" type="email" placeholder="Your email address" />
+          <button type="submit" class="btn btn--gold btn--subscribe">SUBSCRIBE</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo.svg" alt="Produits Divin footer logo" class="footer__logo" />
+      </div>
+      <div class="footer__address">
+        <p>Sale 111,</p>
+        <p>Cádiz, P.A.S 12345</p>
+      </div>
+      <div class="footer__copy">
+        <p>© 2025 Produits Divin. All rights reserved.</p>
+      </div>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:hello@example.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="video-modal" id="videoModal" aria-hidden="true">
+    <div class="video-modal__backdrop" data-close-video></div>
+    <div class="video-modal__dialog" role="dialog" aria-modal="true" aria-label="Video player">
+      <button class="video-modal__close" type="button" data-close-video aria-label="Close video">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="video-modal__content" id="videoContainer"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
